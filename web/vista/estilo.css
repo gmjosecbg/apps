@@ -1,0 +1,24 @@
+h1 {text-align:center;}
+
+.formulario {
+    margin:auto;
+    border:1px solid black;
+    width:600px;
+    text-align: center;
+}
+.formulario table {
+    margin:auto;
+}
+div {margin:auto; border:1px solid black;}
+
+.tabla{
+    border:1px solid black;
+    margin:auto;
+    text-align:center;
+}
+.tabla tr {border:1px solid black;}
+.tabla td {border:1px solid black;}
+
+.tdgris {color:white; background-color: darkslategray;}
+
+table {border-collapse: collapse;}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="vista/estilo.css"/>
+    </head>
+    <body>
+        <h1>Persona - Direccion Emails 1 a N</h1>
+        <div class="formulario">
+                <div>
+            <form method="post" action="ServletDistpatcher" > 
+                    
+                <table>
+                    <tr>
+                        <td>Nif:</td>
+                        <td><input type="text" maxlength="9" name="nif" required></td> 
+                    </tr>
+                    <tr> 
+                        <td>Nombre:</td>
+                        <td><input type="text" name="nombre" required></td> 
+                    </tr>
+                    <tr> 
+                        <td>Domicilio:</td>
+                        <td><input type="text" name="domicilio" required></td> 
+                    </tr>
+                    <tr> 
+                        <td>Email:</td>
+                        <td><input type="text" name="email"></td> 
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="submit" name="eleccion" value="Crear Persona">
+                        </td> 
+                    </tr>
+
+                </table>
+            </form>
+                    
+                </div>
+                
+            <form method="post" action="ServletDistpatcher"> 
+                <div>
+                        <input type="submit" name="eleccion" value="Listar"> 
+                </div>
+
+                <div>
+                    Nif:<input type="text" name="nifemail" />
+                    Email:<input type="text" name="emailemail" />
+                    <input type="submit" name="eleccion" value="Insertar">
+                </div>
+                <div>
+                    Nif:<input type="text" name="nifborrar" /> 
+                    <input type="submit" name="eleccion" value="Borrar">
+                </div> 
+            </form>
+ 
+
+        </div>
+
+
+    </body>
+</html>

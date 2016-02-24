@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 15-feb-2016 11:57:28 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="pojo.Persona" table="persona" catalog="bdpersonadireccion" optimistic-lock="version">
+        <id name="idPersona" type="java.lang.Integer">
+            <column name="ID_PERSONA" />
+            <generator class="identity" />
+        </id>
+        <property name="nif" type="string">
+            <column name="NIF" length="50" not-null="true" />
+        </property>
+        <property name="nombre" type="string">
+            <column name="NOMBRE" length="50" not-null="true" />
+        </property>
+        <property name="domicilio" type="string">
+            <column name="DOMICILIO" length="50" not-null="true" />
+        </property>
+        <set name="direccions" table="direccion" inverse="true" lazy="true" fetch="select" cascade="all">
+            <key>
+                <column name="ID_PERS" not-null="true" />
+            </key>
+            <one-to-many class="pojo.Direccion" />
+        </set>
+    </class>
+</hibernate-mapping>
