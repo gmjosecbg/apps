@@ -11,13 +11,16 @@ h1 {text-align:center;}
 }
 div {margin:auto; border:1px solid black;}
 
-.tabla{
+table{
     border:1px solid black;
     margin:auto;
     text-align:center;
+    color:red;
 }
-.tabla tr {border:1px solid black;}
-.tabla td {border:1px solid black;}
+table tr {border:1px solid black;}
+table td {border:1px solid black;
+        
+}
 
 .tdgris {color:white; background-color: darkslategray;}
 
